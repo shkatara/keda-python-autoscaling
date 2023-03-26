@@ -1,0 +1,17 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: scaledobject-py
+  namespace: test
+spec:
+  scaleTargetRef:
+    name: test
+    apiVersion: apps/v1
+    kind: Deployment
+  triggers:
+  - type: prometheus
+    metadata:
+      serverAddress: http://prometheus-k8s.monitoring:9090
+      metricName: python_request_operations_total
+      threshold: '10'
+      query: python_request_operations_total
