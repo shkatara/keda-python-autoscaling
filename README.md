@@ -133,7 +133,7 @@ Your numbers on Targets and Age will be different. Basically, we are saying that
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/shkatara/keda-python-autoscaling/blob/main/keda-demo-scaling.png)
 
 
 ## Acknowledgements
